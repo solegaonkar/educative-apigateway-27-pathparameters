@@ -43,3 +43,9 @@ Resources:
             Empty:
               title: "Empty Schema"
               type: "object"
+  APIDeployment:
+    Type: AWS::ApiGateway::Deployment
+    Properties:
+      RestApiId:
+        Ref: RestAPI
+      StageName: v1
